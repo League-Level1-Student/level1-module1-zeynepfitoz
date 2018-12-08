@@ -7,5 +7,8 @@ public static void main(String[] args) {
 	Microwave micro = new Microwave();
 	micro.putInMicrowave(pop);
 	String cooking = JOptionPane.showInputDialog("How long do you want to cook the popcorn?");
+	int cook = Integer.parseInt(cooking);
+	micro.setTime(cook);
+	micro.startMicrowave();
 }
 }
